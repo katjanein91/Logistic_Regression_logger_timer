@@ -3,8 +3,9 @@
 Dieses Repository enthält eine:
 <ul>
   <li> Die von conda verwendete Standardkonfigurationsdatei'environment.yml', die eine Python umgebung installiert</li>
-  <li> Jupyter Notebook mit der Musterlösung  'Logistische Regression Musterloesung.ipynb'</li>
+  <li> Jupyter Notebook mit der Musterlösung  'Logistische Regression_UnitTesting_Logging.ipynb'</li>
   <li> Daten für die Ausführung des Projektse 'advertising.csv' </li>
+  <li> Testdaten für den Unittest (Testfall 1) 'unittest_data_OK.txt' und 'unittest_data_N-OK.txt'</li>
  </ul>
  
 <b>Plattform:</b>\
@@ -12,6 +13,8 @@ Für die reproduktion des Projekts im Bereich Logistic Regression wird die Platt
  
  <b>Quelle:</b>\
 Die Übungsaufgabe, Musterlösunge und die Daten stammen aus dem Udemy- Kurs <a href = "https://www.udemy.com/course/python-data-science-machine-learning/learn/lecture/7758116#overview">"Phython für Data Science, Maschinelles Lernen & Visualization"</a>.
+
+ <a href = "https://towardsdatascience.com/unit-testing-and-logging-for-data-science-d7fb8fd5d217">"UnitTesting und Logging"</a>
   
 <b>Begleitende Literatur:</b>\
 <a href = http://faculty.marshall.usc.edu/gareth-james/ISL/ISLR%20Seventh%20Printing.pdf>"Introduction to Statistical Learning" von Gareth James</a>
@@ -96,9 +99,14 @@ Zwei Testfälle werden implementiert:
   ```
   
   <li> Testfall 2: Prüfung der Laufzeit der Trainingsfunktion fit(). Die Laufzeit der Trainingsfunktion überschreitet während der Testfallausführung den Grenwert von 120% der representativen Laufzeit nicht.<li>
-  Die representative Laufzeit ist: 
-  ![alt text](https://github.com/katjanein91/Logistic_Regression_logger_timer/blob/main/representative_laufzeit.PNG)
- Der Grenzwert 120% der representativen Laufzeit wird sowie die Laufzeit der Trainingsfunktion fit() wird ausgegen.
+ Die representative Laufzeit war bei meiner Ausführung: 
+ ![alt text](https://github.com/katjanein91/Logistic_Regression_logger_timer/blob/main/representative_laufzeit.PNG?raw=true)
+ Diese kann aber auch mit dem eigenen Output (Zeile 22) an folgender Stelle angepasst werden:
+  
+  ```python
+  self.representative_runtime= 0.0596613883972168
+  ```
+ Der Grenzwert - 120% der representativen Laufzeit  sowie die Laufzeit der Trainingsfunktion fit() werden ausgegen.
 <ul>
   
 
