@@ -23,7 +23,7 @@ Die Übungsaufgabe, Musterlösunge und die Daten stammen aus dem Udemy- Kurs <a 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/katjanein91/Logistic_Regression_logger_timer/blob/main/Logistische%20Regression_UnitTesting_Logging.ipynb/HEAD)
 
 Durch das Anklicken des blauen badge oben oder über folgende URL erhälst man Zugriff zu Binder um die Musterlösung auszuführen:
-<a href = "https://mybinder.org/v2/gh/katjanein91/Logistic-Regression.git/master?filepath=Logistische%20Regression%20Musterloesung.ipynb"> Logistische Regression Musterloesung </a>
+<a href = "https://mybinder.org/v2/gh/katjanein91/Logistic_Regression_logger_timer/blob/main/Logistische%20Regression_UnitTesting_Logging.ipynb/HEAD"> Logistische Regression_UnitTesting_Logging </a>
 
 Das Jupiter Notebook mit der Musterlösung wird im Browser geöffnet.\
 Wähle unter dem Reiter 'Cell' --> 'Run All' aus um den Python Code auszuführen.\
