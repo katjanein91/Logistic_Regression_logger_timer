@@ -20,7 +20,8 @@ Die Übungsaufgabe, Musterlösunge und die Daten stammen aus dem Udemy- Kurs <a 
 <a href = http://faculty.marshall.usc.edu/gareth-james/ISL/ISLR%20Seventh%20Printing.pdf>"Introduction to Statistical Learning" von Gareth James</a>
 
 # Binder Badge Logistische Regression_Logging
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/katjanein91/Logistic_Regression_logger_timer/blob/main/Logistische%20Regression_UnitTesting_Logging.ipynb/HEAD)
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/katjanein91/Logistic_Regression_logger_timer.git/master?filepath=Logistische%20Regression_UnitTesting_Logging.ipynb)
 
 Durch das Anklicken des blauen badge oben oder über folgende URL erhälst man Zugriff zu Binder um die Musterlösung auszuführen:
 <a href = "https://mybinder.org/v2/gh/katjanein91/Logistic_Regression_logger_timer/blob/main/Logistische%20Regression_UnitTesting_Logging.ipynb/HEAD"> Logistische Regression_UnitTesting_Logging </a>
@@ -102,7 +103,7 @@ Zwei Testfälle werden implementiert:
   
  ![alt text](https://github.com/katjanein91/Logistic_Regression_logger_timer/blob/master/representative_laufzeit.PNG?raw=true)
  
- Diese kann aber auch mit dem eigenen Output (Zeile 22) an folgender Stelle angepasst werden:
+ Diese kann aber auch mit dem eigenen Output (Zeile 22) an folgender Stelle im Notebook angepasst werden:
   
   ```python
   self.representative_runtime= 0.0596613883972168
