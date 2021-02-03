@@ -108,7 +108,7 @@ Zwei Testfälle werden implementiert:
   ```python
   self.representative_runtime= 0.0596613883972168
   ```
- Der Grenzwert - 120% der representativen Laufzeit  sowie die Laufzeit der Trainingsfunktion fit() werden ausgegen.
+ Der Grenzwert - 120% der representativen Laufzeit  sowie die Laufzeit der Trainingsfunktion fit() werden ausgegeben.
 <ul>
   
 
