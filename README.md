@@ -1,4 +1,4 @@
-# Logistic_Regression_logger_timer jupiter Notebook via Binder 
+# Logistic_Regression_UnitTest_Logging jupiter Notebook via Binder 
 
 Dieses Repository enthält eine:
 <ul>
@@ -64,4 +64,4 @@ def my_timer(orig_func):
  
  #### TBD
  
-Die Logger-Datei kann nur offline angesehen werden und im Falle von Fehlern kann der Code entsprechend gedebuggd werden. 
+Die Log-Datei kann nur offline angesehen werden und im Falle von Fehlern kann der Code entsprechend gedebuggd werden. 
