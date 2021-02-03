@@ -14,14 +14,13 @@ Für die reproduktion des Projekts im Bereich Logistic Regression wird die Platt
  <b>Quelle:</b>\
 Die Übungsaufgabe, Musterlösunge und die Daten stammen aus dem Udemy- Kurs <a href = "https://www.udemy.com/course/python-data-science-machine-learning/learn/lecture/7758116#overview">"Phython für Data Science, Maschinelles Lernen & Visualization"</a>.
 
- <a href = "https://towardsdatascience.com/unit-testing-and-logging-for-data-science-d7fb8fd5d217">"UnitTesting und Logging"</a>
+ Für das UnitTesting und Logging wurde folgende Quelle verwendet, <a href = "https://towardsdatascience.com/unit-testing-and-logging-for-data-science-d7fb8fd5d217">"UnitTesting und Logging"</a> in dem der Author auf seine Quellen referenziert.  
   
 <b>Begleitende Literatur:</b>\
 <a href = http://faculty.marshall.usc.edu/gareth-james/ISL/ISLR%20Seventh%20Printing.pdf>"Introduction to Statistical Learning" von Gareth James</a>
 
 # Binder Badge Logistische Regression_Logging
-
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/katjanein91/Logistic-Regression.git/master?filepath=Logistische%20Regression%20Musterloesung.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/katjanein91/Logistic_Regression_logger_timer/blob/main/Logistische%20Regression_UnitTesting_Logging.ipynb/HEAD)
 
 Durch das Anklicken des blauen badge oben oder über folgende URL erhälst man Zugriff zu Binder um die Musterlösung auszuführen:
 <a href = "https://mybinder.org/v2/gh/katjanein91/Logistic-Regression.git/master?filepath=Logistische%20Regression%20Musterloesung.ipynb"> Logistische Regression Musterloesung </a>
