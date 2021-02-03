@@ -16,7 +16,7 @@ Die Übungsaufgabe, Musterlösunge und die Daten stammen aus dem Udemy- Kurs <a 
 <b>Begleitende Literatur:</b>\
 <a href = http://faculty.marshall.usc.edu/gareth-james/ISL/ISLR%20Seventh%20Printing.pdf>"Introduction to Statistical Learning" von Gareth James</a>
 
-# Binder Badge Logistische Regression_logger_timer
+# Binder Badge Logistische Regression_Logging
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/katjanein91/Logistic-Regression.git/master?filepath=Logistische%20Regression%20Musterloesung.ipynb)
 
@@ -28,7 +28,7 @@ Wähle unter dem Reiter 'Cell' --> 'Run All' aus um den Python Code auszuführen
 Das erwartete Ergebnis zu den jeweiligen Aufgaben wird in der Output Zelle angezeigt.
 Darüber Hinaus wird die Ausführungszeit für bestimmte Funktionen protokolliert, indem wir @mylogger & @my_timer zu jeder Funktion hinzufügen, die wir  protokollieren und deren Laufzeit kennen wollen. Dazu müsssen die notwendigen Wrapper Timer und Logger folgendermaßen eingerichtet werden:
  
-```
+```python 
 # Decorators
 from functools import wraps
 
@@ -60,8 +60,49 @@ def my_timer(orig_func):
     return wrapper
 ```    
     
- Die Wrapper werden wiefolgt verwendet:
+ Die Wrapper werden wiefolgt für folgende zwei Funktionen verwendet:
  
- #### TBD
- 
-Die Log-Datei kann nur offline angesehen werden und im Falle von Fehlern kann der Code entsprechend gedebuggd werden. 
+ ```python
+@my_logger
+@my_timer
+def logmodelFit():
+    return logmodel.fit(X_train,y_train)
+logmodelFit()
+```
+Eine Log-Datei "logmodelFit.log" wird ereugt, kann aber nur offline angesehen werden und im Falle von Fehlern kann der Code entsprechend gedebuggt werden.
+
+```python
+@my_logger
+@my_timer
+def logmodelPredict():
+    return logmodel.predict(X_test)
+predictions = logmodelPredict()
+```
+Bei der Ausführung des Notebooks wird die Laufzeit angezeigt. Für das obige Beispiel erhält man folgenden Output: "logmodelPredict ran in: 0.0019986629486083984 sec"
+
+# Logistische Regression_UnitTest
+
+Zwei Testfälle werden implementiert:
+
+<ul>
+  <li> Testfall 1: Prüfung ob der Vorhersagewert predict() es Modells korrekt funktioniert </li>
+   Für Testdall 1 stehen zwei unterschiedliche Testdaten zur Verfügung: "unittest_data_OK.txt" und "unittest_data_N-OK.txt".
+   Im Notebook wird das erste File ausgefüht. Der Test ist erfolgreich. Das der Testfall 1 muss fehlschlagen wenn das zweite File eingelesen wird.
+   Dazu muss im Notebook an nachfolgender Stelle "unittest_data_OK.txt" durch "unittest_data_N-OK.txt" ersetzt werden.
+  
+  ```python
+   with open("unittest_data_OK.txt", 'r') as f:
+            content = f.read()
+  ```
+  
+  <li> Testfall 2: Prüfung der Laufzeit der Trainingsfunktion fit(). Die Laufzeit der Trainingsfunktion überschreitet während der Testfallausführung den Grenwert von 120% der representativen Laufzeit nicht.<li>
+  Die representative Laufzeit ist: 
+  ![alt text](https://github.com/katjanein91/Logistic_Regression_logger_timer/blob/main/representative_laufzeit.PNG)
+ Der Grenzwert 120% der representativen Laufzeit wird sowie die Laufzeit der Trainingsfunktion fit() wird ausgegen.
+<ul>
+  
+
+
+
+
+
