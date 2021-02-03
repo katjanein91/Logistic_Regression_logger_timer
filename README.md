@@ -99,7 +99,9 @@ Zwei Testfälle werden implementiert:
   
   <li> Testfall 2: Prüfung der Laufzeit der Trainingsfunktion fit(). Die Laufzeit der Trainingsfunktion überschreitet während der Testfallausführung den Grenwert von 120% der representativen Laufzeit nicht.<li>
  Die representative Laufzeit war bei meiner Ausführung: 
+  
  ![alt text](https://github.com/katjanein91/Logistic_Regression_logger_timer/blob/master/representative_laufzeit.PNG?raw=true)
+ 
  Diese kann aber auch mit dem eigenen Output (Zeile 22) an folgender Stelle angepasst werden:
   
   ```python
